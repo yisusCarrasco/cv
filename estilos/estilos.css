@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800&display=swap');
+*{
+    font-family: 'Nunito Sans', sans-serif;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all 0.2s linear;
+    outline: none;border: none;
+}
+
+
+:root{
+    --yellown:#FFF0BC;
+    --brownBlack:#4D4B4B;
+    --gray:#BABABA;
+    --box-shadow:0 0.5rem 1.5rem rgba(0,0,0,0.1);
+}
+
+.correito .mapita .telefonito{
+    fill:#deddda;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-areas:
+        "header1 titulo2 titulo2"
+        "header1 info3 info3"
+        "header1 info3 info3";
+    
+
+}
+
+/*Inicio con imagen */
+.header1 {
+    grid-area: header1;
+    background-color: var(--brownBlack);
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-top: 100px;
+    text-align: center;
+    min-width: 300px;
+    min-height: 100vh;
+}
+
+.correito-container,.telefono-container, .mapa-container{
+    display: inline-block; 
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-sizing: content-box; 
+    overflow: hidden; 
+}
+
+.correito, .telefonito, .mapita{
+    display: block;
+    width: 100%;
+    border-radius: 50%;
+    margin-top: 7px; 
+}
+
+.idiomas{
+    text-align: left;
+    padding-left: 20px;
+}
+
+.custom-hr-container{
+    display: inline-block;
+    width: 85%;
+}
+
+.custom-hr {
+    border: 1px solid #ccc; 
+    width: 100%;    
+}
+
+.blanco{
+    color:#fff;
+}
+
+.image-container {
+    display: inline-block;
+    justify-content: center;
+    align-items: top;
+    box-sizing: border-box;
+}
+
+.masked-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid white; /* Añadir un borde blanco */
+}
+
+/* Comienzo del título*/
+.titulo2{
+    grid-area: titulo2;
+    background-color: var(--yellown);
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-top: 100px;
+    
+}
+
+.titulo2_contenido{
+    display: flex;
+}
+
+.titulo2_contenido h1{
+    font-size: 50px;
+}
+
+/* Información*/
+
+.info3{
+    grid-area: info3;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.aptitudes-container{
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+}
+
+.puntitos{
+    text-decoration: dotted;
+    text-decoration-color: red; 
+}
+
+.historial, .aptitudes, .formacion{
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-areas:
+            "titulo2"
+            "header1"
+            "info3"
+            "info3";
+    }
+}
+
